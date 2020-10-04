@@ -109,16 +109,16 @@ const AddToCart = ( props ) => {
 	return (
 		<div>
 			{/* Add To Cart Loading*/}
-			{addToCartLoading && <p>Adding to Cart...</p>}
+			{addToCartLoading && <p>Agregar al carrito...</p>}
 
 			{/*	Check if its an external product then put its external buy link */}
 			{ "ExternalProduct" === product.__typename ? (
-					<a href={ product.externalUrl } target="_blank" className="btn btn-secondary">Buy</a>
+				<a href={product.externalUrl} target="_blank" className="btn btn-secondary">Comprar</a>
 				) :
-				<button onClick={ handleAddToCartClick } className="btn btn-secondary">Add to cart</button>
+				<button onClick={handleAddToCartClick} className="btn btn-secondary">Añadir al carrito</button>
 			}
 			{ showViewCart ? (
-				<Link href="/cart"><button className="woo-next-view-cart-btn btn btn-secondary">View Cart</button></Link>
+				<Link href="/cart"><button className="woo-next-view-cart-btn btn btn-secondary">Ver carrito</button></Link>
 			) : '' }
 		</div>
 	);

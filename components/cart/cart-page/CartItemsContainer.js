@@ -108,15 +108,15 @@ const CartItemsContainer = () => {
 		<div className="content-wrap-cart">
 			{ cart ? (
 				<div className="woo-next-cart-wrapper container">
-					<h1 className="woo-next-cart-heading mt-5">Cart</h1>
+					<h1 className="woo-next-cart-heading mt-5">Productos del Carrito</h1>
 					<table className="table table-hover">
 						<thead>
 						<tr className="woo-next-cart-head-container">
 							<th className="woo-next-cart-heading-el" scope="col"/>
 							<th className="woo-next-cart-heading-el" scope="col"/>
-							<th className="woo-next-cart-heading-el" scope="col">Product</th>
-							<th className="woo-next-cart-heading-el" scope="col">Price</th>
-							<th className="woo-next-cart-heading-el" scope="col">Quantity</th>
+							<th className="woo-next-cart-heading-el" scope="col">Producto</th>
+							<th className="woo-next-cart-heading-el" scope="col">Precio</th>
+							<th className="woo-next-cart-heading-el" scope="col">Unidad/es</th>
 							<th className="woo-next-cart-heading-el" scope="col">Total</th>
 						</tr>
 						</thead>
@@ -139,10 +139,10 @@ const CartItemsContainer = () => {
 					{/*Clear entire cart*/}
 					<div className="clear-cart">
 						<button className="btn btn-secondary " onClick={ ( event ) => handleClearCart( event ) } disabled={ clearCartProcessing }>
-							<span className="woo-next-cart">Clear Cart</span>
+							<span className="woo-next-cart">Limpiar Carrito</span>
 							<i className="fa fa-arrow-alt-right"/>
 						</button>
-						{ clearCartProcessing ? <p>Clearing...</p> : '' }
+						{ clearCartProcessing ? <p>Limpiando...</p> : '' }
 					</div>
 
 					{/* Display Errors if any */}
@@ -166,7 +166,7 @@ const CartItemsContainer = () => {
 							</table>
 							<Link href="/checkout">
 								<button className="btn btn-secondary woo-next-large-black-btn">
-									<span className="woo-next-cart-checkout-txt">Proceed to Checkout</span>
+									<span className="woo-next-cart-checkout-txt">Pasar por la caja</span>
 									<i className="fas fa-long-arrow-alt-right"/>
 								</button>
 							</Link>
@@ -175,10 +175,10 @@ const CartItemsContainer = () => {
 				</div>
 			) : (
 				<div className="container mt-5">
-					<h2>No items in the cart</h2>
+						<h2>No hay artículos en el carrito</h2>
 					<Link href="/">
 						<button className="btn btn-secondary woo-next-large-black-btn">
-							<span className="woo-next-cart-checkout-txt">Add New Products</span>
+								<span className="woo-next-cart-checkout-txt">Agregar nuevos productos</span>
 							<i className="fas fa-long-arrow-alt-right"/>
 						</button>
 					</Link>

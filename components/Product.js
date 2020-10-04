@@ -1,4 +1,5 @@
 import Link from 'next/link';
+//import { withRouter} from 'next/router'
 import AddToCartButton from '../components/cart/AddToCartButton';
 import clientConfig from '../client-config';
 import { isEmpty } from 'lodash';
@@ -21,9 +22,9 @@ const Product = ( props ) => {
 				>
 					<a>
 						{ !isEmpty( product.image ) ? (
-							<img src={ product.image.sourceUrl } alt="Product image"/>
+							<img className="product-container" src={product.image.sourceUrl} alt={product.image.title} title={product.image.title}/>
 						) : !isEmpty( clientConfig.productImagePlaceholder ) ? (
-							<img
+								<img className="product-container"
 								src={ clientConfig.productImagePlaceholder }
 								alt="Placeholder product image"
 							/>
@@ -31,7 +32,8 @@ const Product = ( props ) => {
 					</a>
 				</Link>
 				<div className="card-body text-center">
-					<h6 className="card-subtitle mb-3">{ product.price }</h6>
+					<h6 className="card-subtitle mb-3">{product.price}</h6>
+					{/* <h6 className="card-subtitle mb-3">{product.averageRating}</h6> */}
 					<AddToCartButton product={ product }/>
 				</div>
 			</div>

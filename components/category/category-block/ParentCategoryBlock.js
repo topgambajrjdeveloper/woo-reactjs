@@ -1,4 +1,4 @@
-import Link from 'next/link';;
+import Link from 'next/link';
 
 const ParentCategoryBlock = ( props ) => {
 
@@ -12,7 +12,7 @@ const ParentCategoryBlock = ( props ) => {
 				<a>
 					<img
 						src={ null !== category.image ? category.image.sourceUrl : '' }
-						alt="ParentCategoryBlock image"/>
+						alt={category.image.title} title={category.image.title}/>
 				</a>
 			</Link>
 			{/*<div className="card-body text-center">*/}

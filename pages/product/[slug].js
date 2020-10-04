@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout';
 //import { useRouter } from 'next/router';
+import { withRouter } from 'next/router'
 import client from '../../components/ApolloClient';
 import AddToCartButton from '../../components/cart/AddToCartButton';
 import PRODUCT_BY_SLUG_QUERY from '../../queries/product-by-slug';
@@ -20,13 +21,14 @@ const Product = (props) => {
 				<div className="woo-next-single">
 					<div className="woo-next-single__product card bg-light mb-3 p-5">
 						<div className="card-header">{ product.name }</div>
+						<hr />
 						<div className="card-body">
-							<h4 className="card-title">{ product.name }</h4>
 							{ !isEmpty( product.image ) ? (
 								<img
 									src={ product.image.sourceUrl }
-									alt="Product Image"
-									width="200"
+									alt={product.image.title}
+									title={product.image.title}
+									width="100%"
 									srcSet={ product.image.srcSet }
 								/>
 							) : !isEmpty( clientConfig.singleImagePlaceholder ) ? (
@@ -34,7 +36,8 @@ const Product = (props) => {
 									src={ clientConfig.singleImagePlaceholder }
 									alt="Placeholder product image"
 								/>
-							) : null }
+								) : null}
+							<hr/>
 							<div
 								dangerouslySetInnerHTML={ {
 									__html: product.description,

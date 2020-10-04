@@ -7,7 +7,8 @@
     "build": "npm run build-fragment && next build",
     "build-fragment": "node schemaQuery.js",
     "start": "next start",
-    "deploy": "npm run build && now"
+    "deploy": "npm run build && now",
+    "export": "next build && next export"
   },
   "author": "DevCordenadas",
   "license": "ISC",
@@ -28,10 +29,12 @@
     "isomorphic-unfetch": "^3.0.0",
     "lodash": "^4.17.19",
     "next": "^9.4.4",
+    "nextjs-sitemap-generator": "^1.1.1",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-apollo": "^3.0.1",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.11.0",
     "uuid": "^7.0.2",
     "validator": "^13.0.0",
     "woocommerce-api": "^1.4.2"

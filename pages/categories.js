@@ -11,7 +11,7 @@ const Categories = ( props ) => {
 		<Layout>
 			{/*Categories*/}
 			<div className="mt-5 text-center content-wrap">
-				<h2>Categories</h2>
+				<h2 className="titulo">Categorías</h2>
 				<ParentCategoriesBlock productCategories={ productCategories }/>
 			</div>
 		</Layout>

@@ -74,7 +74,7 @@ export const afterware = new ApolloLink( ( operation, forward ) => {
 // Apollo GraphQL client.
 const client = new ApolloClient({
 	link: middleware.concat( afterware.concat( createHttpLink({
-		uri: clientConfig.graphqlUrl,
+		uri: clientConfig.graphqlUrl || process.env.graphqlUrl,
 		fetch: fetch
 	}) ) ),
 	cache: new InMemoryCache( { fragmentMatcher } ),
