@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "woo-next",
-  "alias": "woo-next",
+  "name": "woo-soap",
+  "alias": "woo-soap",
   "builds": [
 	{
 	  "src": "package.json",

@@ -8,8 +8,8 @@ const Footer = () => (
 			<span className="text-gray">Follow on social links to support the work</span>
 		</div>
 		<ul className="social-links">
-			<li><a href="https://www.facebook.com/codeytek" className="fab fa-facebook-f" target="_blank"></a></li>
-			<li><a href="https://www.instagram.com/codeytek_academy/" className="fab fa-instagram" target="_blank"></a></li>
+			<li><a href="https://www.facebook.com/codeytek" className="fa fa-facebook" target="_blank"></a></li>
+			<li><a href="https://www.instagram.com/codeytek_academy/" className="fa fa-instagram" target="_blank"></a></li>
 		</ul>
 	</div>
 );
