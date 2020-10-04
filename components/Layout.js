@@ -21,7 +21,7 @@ const Layout = ( props ) => {
 							<meta name="description" content="Los jabones M&JSoap productos de nuestra línea elaborados con Aceite de Oliva Virgen Extra como base principal además de otros aceites" />
 							<meta name="keywords" content="Jabones de aceite 100%, bio y naturales, M&JSoap´s" />
 							<meta name="author" content="DevCordenadas" />
-							<link rel="icon" type="image/png" href="./clean.png"/>
+							<link rel="icon" type="image/png" href="../public/clean.png"/>
 							<link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet" />
 							<link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
 						</Head>

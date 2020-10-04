@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from "./../context/AppContext";
 import Link from 'next/link';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const CartIcon = () => {
 
@@ -15,7 +16,7 @@ const CartIcon = () => {
 					<div className="woo-next-cart-wrap">
 						{ totalPrice ? <span className="woo-next-cart-price mr-2">{ totalPrice }</span> : '' }
 						<span className="woo-next-cart-icon-container">
-							<i className="fa fa-shopping-cart woo-next-cart-icon"/>
+							<i className="woo-next-cart-icon" /> <FaShoppingCart/>
 							{ productsCount ? <span className="woo-next-cart-count">{ productsCount }</span> : '' }
 						</span>
 					</div>

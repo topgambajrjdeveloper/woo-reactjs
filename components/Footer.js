@@ -11,14 +11,14 @@ const Footer = () => (
 			<li>
 				<a href="https://www.instagram.com/myjsoap/" target="_blank" className="fa-facebook">
 					<h3>
-					<FaInstagram />
+						<FaInstagram />
 					</h3>
-					</a>
-					</li>
-					<li>
-					<a href="https://www.facebook.com/myjsoaps/" target="_blank" className="fa-facebook">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/myjsoaps/" target="_blank" className="fa-facebook">
 					<h3>
-					<FaFacebookF />
+						<FaFacebookF />
 					</h3>
 				</a>
 			</li>
